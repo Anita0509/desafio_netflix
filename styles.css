@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border:0;
+    box-sizing: border-box;
+}
+
+.body .main__contenedor{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 16px;
+}
+
+.main__contenedor{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../desafio_netflix/img/fondo.jpg);
+    background-size: cover;   
+}
+
+.caja__contenedora{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-wrap: wrap;
+}
+
+ .header__nav{
+    display: flex;
+    background-color: transparent;
+    max-width: 1920px;
+    padding-top: 20px;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 56px;
+    margin-left: 56px;
+}
+
+.header__logo{
+    width: 220px;
+    height: 70px;
+    margin-top: -12px;
+}
+
+.selector__idioma{
+    display: inline-block;
+    margin: 0 0.75rem;
+    margin-left: auto;
+    margin-right: 32px;
+    height: 70px;
+}
+
+.selector__idioma select{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: 0.5rem 1.375rem;
+    line-height: 1.3em;
+}
+
+.selector__idioma::before {
+    font-family: 'Material Icons';
+    color: white;
+    font-size: 18px;
+    content: '\e894';
+    position: absolute;
+    pointer-events: none;
+    padding-left: 3px;
+    padding-top: 8px;
+  }
+
+.selector__idioma select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.selector__idioma::after {
+    font-family: 'Material Icons';
+    color: white;
+    font-size: 28px;
+    content: '\e5c5';
+    position: absolute;
+    pointer-events: none;
+    top: 23px;
+    padding-left: 69px;
+  }
+
+.boton__rojo{
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 3px;
+    color: white;
+    text-decoration: solid;
+}
+
+.textos{
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 75px;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.textos h1{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0 auto;
+    font-size: 64px;
+    line-height: 1.1;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: 0 0;
+    color: #fff;
+}
+
+.textos h2{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 26px;
+    text-align: center;
+    background: 0 0;
+    color: #fff;
+    font-weight: 400;
+    margin: 16px auto;
+    max-width: 640px;
+}
+
+.textos h3{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding-top: 15px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 19.2px;
+    background: 0 0;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+    min-width: 450px;
+    height: 60px!important;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    display: block;
+    color: #000;
+    line-height: normal;
+    position: relative;
+    margin: 0px;
+}
+
+.boton_email{
+    margin: 0!important;
+    border-top-left-radius: 0;
+    border-left: 1px solid #333;
+    font-size: 1.625rem;
+    min-height: 60px;
+    padding: 0 1em;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    line-height: initial;
+    width: auto;
+    position: relative;
+    min-width: 74px;
+    color: #fff;
+    background-color: #e50914;
+    background-image: linear-gradient(to bottom,#e50914,#db0510);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    vertical-align: middle;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1px;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px), only screen and (min-width: 350px) and (max-width: 399px), only screen and (max-width: 349px)
+{.textos h2, .textos h3{
+    font-size: 1.125rem;
+} 
+}
+
+@media only screen and (min-width: 350px) and (max-width: 399px)
+{
+    .textos{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 0px;
+    }
+
+    .textos h1{
+        font-size: 28px;
+    }
+
+    .textos h3{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .header__nav{
+        height: 45px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .header__logo{
+        margin-right: auto;
+        width: 110px;
+        height: 57px;
+    }
+
+    .selector__idioma
+    {
+        display: inline-block;
+        margin: 0 0.75rem;
+    }
+
+    .boton__rojo{
+        font-size: .9rem;
+        margin-top: 0.35rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .email{
+        height: 48px!important;
+        padding: 10px 10px 0;
+        min-width: 330px;
+    }
+
+    .boton_email{
+        font-size: 1rem;
+        min-height: 40px;
+        margin-top: 10px!important;
+    }
+}
